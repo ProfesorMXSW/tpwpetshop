@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    color: #4e3300;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    text-align: center;
+    font-family: 'Arial Narrow';
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#ffcc50;
+    background-size: cover;
+    
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #853400;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+
+}
+
+.space{
+    height: 80px;
+}
+
+nav{
+    background: #853400;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 5px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: #ffffc7;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: #4e3300;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: #ffffc7;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 13px;
+    }
+  }
+  @media (max-width: 890px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #c06500;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #ffcc50;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+}
+
+.titulo{
+    margin-top: 4.5rem;
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p{
+    margin-bottom: 50px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+    color: #ffffc7;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 40px;
+    border: 2px solid #4e3300;
+    color:#ffffc7;
+    text-decoration: none;
+    background: #4e3300;    
+}
+
+.btn:hover{
+    background: none;
+}
+
+.btn-home{
+    display: flex;
+    justify-content: center;
+}
+
+ .btn-home a{
+    margin: 15px 10px;
+}
+
+.content{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.one{
+    
+    background-color: #fabd21;
+}
+
+.box-cont{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    
+    background-color: #853400;
+    margin: 2rem;
+}
+
+.box-cont .box{
+    flex: 15px;
+    width: 250px;
+    background-color: #c06500;
+    border-radius: 0.5rem;
+    box-shadow: 0 .1rem 3rem rgba(0,0,0,.5);
+    margin: 2rem;
+    text-align: center;
+}
+
+.box-cont .box2{
+
+
+    background-color: #c06500;
+    border-radius: 0.5rem;
+    box-shadow: 0 .1rem 3rem rgba(0,0,0,.5);
+    margin: 2rem;
+    text-align: center;
+}
+
+ 
+
+.box-cont .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    color: #ffcc50;
+    background: #4e3300;
+    font-size: 4rem;
+    border-radius: 50%;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.box-cont .box h3{
+    color: #ffff89;
+    font-size: 20px;
+}
+
+.box-cont .box p{
+    padding: 0 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.two{
+    background: #ffcc50;
+}
+
+.three{
+    background:#fabd21;
+}
+.re {
+    width: 70%;
+}
+
+.wrapper{
+    display: flex;
+    position: relative;
+    height: 30rem;
+    width: 80%;
+    background-color: #4e3300;
+}
+.wrapper iframe{
+    position: static;
+    margin: 1rem;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    
+}
+
+img{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+
+ 
+.modal-content {
+    position: relative;
+    background-color: #ffcc50;
+    margin: 5% auto;
+    padding: 0;
+    border: 7px solid #853400;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.modal-content p {
+    color: #c06500;
+}
+
+.close {
+    color: #853400;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #853400;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+@media (max-width: 768px){
+    .titulo{
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    
+}
+/*
+.navbar {
+    box-shadow: 0 2px 4px rgba(245, 186, 59, 0.918);
+}
+*/
+.box {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/*
+.titulo:hover {
+    color: #885200;
+    transition: 0.8s
+}   
+
+.titulo:hover {
+    text-decoration: underline;
+    transition: 1s
+}
+
+.titulo:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+*/
+
+.box2:hover,
+.box:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agregar sombra suave */
+    background-color: #8b5c3caf; /* Cambiar el color de fondo al pasar el puntero */
+    transition: 0.3s; /* Agregar una transición suave */
+}
+
+.box2:hover,
+.box:hover {
+    transform: scale(1.025); /* Aumentar el tamaño al pasar el puntero */
+    transition: transform 1s; /* Agregar una transición suave */
+}
